@@ -1,0 +1,6 @@
+/vendor/
+/nbproject/
+.phpunit
+/phpunit.xml
+/test.php
+/composer.lock
