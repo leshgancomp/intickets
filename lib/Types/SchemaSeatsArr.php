@@ -13,7 +13,7 @@ class SchemaSeatsArr
     /**
      * @return \ExploitIt\Intickets\Models\SchemaSeat[]
      */
-    public function getSchemaSeat() : array
+    public function getSchemaSeat() : ?array
     {
         if ($this->schema_seat instanceof \ExploitIt\Intickets\Models\SchemaSeat){
             return [$this->schema_seat];

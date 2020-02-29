@@ -54,7 +54,7 @@ class Hall
     /**
      * @return string
      */
-    public function getCity() : string
+    public function getCity() : ?string
     {
         return $this->city;
     }
@@ -62,7 +62,7 @@ class Hall
     /**
      * @return string
      */
-    public function getAddress() : string
+    public function getAddress() : ?string
     {
         return $this->address;
     }
@@ -70,7 +70,7 @@ class Hall
     /**
      * @return string
      */
-    public function getShortDescription() : string
+    public function getShortDescription() : ?string
     {
         return $this->short_description;
     }
@@ -78,7 +78,7 @@ class Hall
     /**
      * @return string
      */
-    public function getImgLink() : string
+    public function getImgLink() : ?string
     {
         return $this->img_link;
     }

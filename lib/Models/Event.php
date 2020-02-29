@@ -56,7 +56,7 @@ class Event
     /**
      * @return string
      */
-    public function getName() : string
+    public function getName() : ?string
     {
         return $this->name;
     }
@@ -64,7 +64,7 @@ class Event
     /**
      * @return string
      */
-    public function getAgeCategory() : string
+    public function getAgeCategory() : ?string
     {
         return $this->age_category;
     }
@@ -72,7 +72,7 @@ class Event
     /**
      * @return string
      */
-    public function getShortDescription() : string
+    public function getShortDescription() : ?string
     {
         return $this->short_description;
     }
@@ -80,7 +80,7 @@ class Event
     /**
      * @return string
      */
-    public function getImgLink() : string
+    public function getImgLink() : ?string
     {
         return $this->img_link;
     }
@@ -88,7 +88,7 @@ class Event
     /**
      * @return string
      */
-    public function getOrganizerTaxpayerNumber() : string
+    public function getOrganizerTaxpayerNumber() : ?string
     {
         return $this->organizer_taxpayer_number;
     }
@@ -96,7 +96,7 @@ class Event
     /**
      * @return string
      */
-    public function getOrganizerName() : string
+    public function getOrganizerName() : ?string
     {
         return $this->organizer_name;
     }
@@ -104,7 +104,7 @@ class Event
     /**
      * @return string
      */
-    public function getOrganizerAddress() : string
+    public function getOrganizerAddress() : ?string
     {
         return $this->organizer_address;
     }

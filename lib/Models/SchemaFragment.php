@@ -57,7 +57,7 @@ class SchemaFragment
     /**
      * @return int
      */
-    public function getUnnumberedSeatsQuantity() : int
+    public function getUnnumberedSeatsQuantity() : ?int
     {
         return $this->unnumbered_seats_quantity;
     }
