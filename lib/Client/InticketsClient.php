@@ -12,7 +12,7 @@ class InticketsClient {
      */
     private $soapClient;
 
-    public function __construct($username, $password) {
+    public function __construct($username, $password, $demo = false) {
         $classmap = [
             'Event'                         => \ExploitIt\Intickets\Models\Event::class,
             'Hall'                          => \ExploitIt\Intickets\Models\Hall::class,
@@ -78,10 +78,11 @@ class InticketsClient {
             
         ];
         $Auth = new Auth;
-        $Auth->username = $username;
-        $Auth->password_md5 = md5($password);
+        $Auth->username = trim($username);
+        $Auth->password_md5 = md5(trim($password));
         $header = new \SoapHeader('urn:InticketsAPI', 'Auth', $Auth);
-        $this->soapClient = new \SoapClient('https://demoapi.intickets.ru/soap/?wsdl&ver=1.7',['classmap'=>$classmap]);
+        $uri = $demo ? 'https://demoapi.intickets.ru/soap/?wsdl&ver=1.7':'https://api.intickets.ru/soap/?wsdl&ver=1.7';
+        $this->soapClient = new \SoapClient($uri,['classmap'=>$classmap]);
         $this->soapClient->__setSoapHeaders($header);
     }
     
