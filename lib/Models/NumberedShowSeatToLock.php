@@ -30,6 +30,14 @@ class NumberedShowSeatToLock
     {
         return $this->cost;
     }
+    
+    public function setId($id){
+        $this->id = $id;
+    }
+    
+    public function setCost($cost){
+        $this->cost = $cost;
+    }
 
 
 }
