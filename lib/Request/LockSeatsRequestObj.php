@@ -49,7 +49,7 @@ class LockSeatsRequestObj
     public function setNumberedShowSeatToLockArr(\ExploitIt\Intickets\Types\NumberedShowSeatToLockArr $numbered_show_seat_to_lock_arr) : LockSeatsRequestObj
     {
         $this->numbered_show_seat_to_lock_arr = $numbered_show_seat_to_lock_arr;
-        return this;
+        return $this;
     }
 
     /**
