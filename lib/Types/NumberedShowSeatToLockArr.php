@@ -20,6 +20,17 @@ class NumberedShowSeatToLockArr
         }
         return $this->numbered_show_seat_to_lock;
     }
+    
+    
+    /**
+     * 
+     * @param \ExploitIt\Intickets\Models\NumberedShowSeatToLock $NumberedShowSeatToLock
+     * @return $this
+     */
+    public function addNumberedShowSeatToLock(\ExploitIt\Intickets\Models\NumberedShowSeatToLock $NumberedShowSeatToLock){
+        $this->numbered_show_seat_to_lock[]=$NumberedShowSeatToLock;
+        return $this;
+    }
 
 
 }
